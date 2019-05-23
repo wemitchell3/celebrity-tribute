@@ -2,10 +2,15 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* flex-flow: wrap */
 }
 
 #siteTitle { 
-    font-size: 50px; 
+    font-size: 130%; 
+}
+
+.pageTitle { 
+    font-size: 15px; 
 }
 .navBar {
     background-color: rgb(227, 232, 236);
@@ -17,6 +22,9 @@ body {
     border-radius: 0px 0px 20px 20px;
     margin-bottom: 25px; 
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 850px;
 }
 
 .navLink {
@@ -43,7 +51,7 @@ body {
 
 .content {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.473);
-    width: 750px;
+    max-width: 750px;
     margin-bottom: 25px;
     padding: 25px;
     margin-bottom: 25px;
@@ -58,7 +66,7 @@ img {
     box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.473);
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    /* object-fit: contain; */
     margin: 10px;
 }
 
